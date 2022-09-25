@@ -9,6 +9,10 @@ extern "C" {
     #[wasm_bindgen(js_name = "ITerminalOptions")]
     pub type TerminalOptions;
 
+    #[wasm_bindgen(method, setter, js_name = "allowProposedApi")]
+    pub fn set_allow_proposed_api(this: &TerminalOptions, val: bool);
+
+    
     #[wasm_bindgen(method, setter, js_name = "allowTransparency")]
     pub fn set_allow_transparency(this: &TerminalOptions, val: bool);
 
